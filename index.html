@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Physics Simulator</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    <body>
+        <img src="imgs/background.jpg">
+        <canvas id="canvas"></canvas>
+
+        <p class="camerapos">[0, 0]</p>
+
+        <div class="settings-hover"></div>
+        <div class="settings">
+            <ul>
+                <li><p>Configurações</p></li>
+                <li>
+                    <input type="submit" name="pausar" value="pausar: não" tipo="switch" state="false">
+                </li>
+                <li>
+                    <label>Massa</label>
+                    <input type="number" name="massa" value="100">
+                </li>
+                <li>
+                    <label>Raio</label>
+                    <input type="number" name="raio" value="50">
+                </li>
+                <li>
+                    <label>Cor</label>
+                    <select id="cor">
+                        <option value="blue">azul</option>
+                        <option value="red">vermelho</option>
+                        <option value="black">preto</option>
+                        <option value="white">branco</option>
+                        <option value="yellow">amarelo</option>
+                        <option value="orange">laranja</option>
+                        <option value="purple">roxo</option>
+                        <option value="gray">cinza</option>
+                        <option value="green">verde</option>
+                        <option value="cyan">ciano</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="submit" name="gravidade" value="gravidade: sim" tipo="switch" state="true">
+                </li>
+                <li>
+                    <input type="submit" name="colisão" value="colisão: sim" tipo="switch" state="true">
+                </li>
+                <li>
+                    <input type="submit" name="acelerar" value="acelerar: não" tipo="switch" state="false">
+                </li>
+                <li>
+                    <input type="submit" name="inerciar" value="inerciar: não" tipo="switch" state="false">
+                </li>
+                <li>
+                    <input type="submit" name="mover" value="mover: não" tipo="switch" state="false">
+                </li>
+                <li>
+                    <input type="submit" name="remover" value="remover: não" tipo="switch" state="false">
+                </li>
+                <li>
+                    <input type="submit" name="orbitar" value="orbitar: não" tipo="switch" state="false">
+                </li>
+                <li>
+                    <input type="submit" name="referencial" value="referencial: não" tipo="switch" state="false">
+                </li>
+                <li>
+                    <input type="submit" name="radial" value="radial: não" tipo="switch" state="false">
+                    <input type="range"  name="orbitradius" min="10" max="100000" value="20">
+                    <label class="oradiusdisplay">raio da órbita: 20</label>
+                    <input type="range"  name="orbitnumber" min="1" max="300" value="10">
+                    <label class="numberdisplay">número de planetas: 10</label>
+                </li>
+                <li>
+                    <input type="submit" name="projeção" value="projeção: sim" tipo="switch" state="true">
+                </li>
+                <li>
+                    <input type="submit" name="cinemático" value="cinemático: não" tipo="switch" state="false">
+                    <input type="submit" name="brilho" value="brilho: sim" tipo="switch" state="true" style="margin-top: 10px">
+                    <input type="submit" name="distorção" value="distorção: sim" tipo="switch" state="true" style="margin-top: 10px">
+                </li>
+                <li>
+                    <input type="submit" name="resetar" value="resetar" tipo="button" state="true">
+                </li>
+                <li>
+                    <input type="submit" name="previsao" value="previsao: não" tipo="switch" state="false">
+                    <input type="range"  name="prevprecision" min="1" max="10" value="4">
+                    <label class="precisiondisplay">precisão: 4</label>
+                    <input type="range"  name="prevrange" min="1" max="60" value="10">
+                    <label class="prevdisplay">10s</label>
+                </li>
+            </ul>
+        </div>
+
+        <script src="js/glfx.js"></script>
+        <script src="js/auxFunctions.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/backgroundImage.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

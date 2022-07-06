@@ -1,0 +1,157 @@
+body {
+    background: black;
+}
+
+#canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: Calibri;
+    font-size: 24px;
+    text-align: center;
+    background-color: blue;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: white;
+    color: blue;
+}
+
+img {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#background {
+    position: fixed;
+    left: -1px;
+    top: -1px;
+    width: 101vw;
+    height: 101vh;
+}
+
+#grid {
+    filter: invert(1);
+}
+
+.camerapos {
+    position: fixed;
+    background: #FFFFFF11;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    width: 50vw;
+    margin: 10px 0;
+    margin-left: calc(50vw - 25vw);
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: calibri;
+    text-align: center;
+}
+
+.settings {
+    position: fixed;
+    backdrop-filter: blur(2px);
+    right: -320px;
+    background: rgba(255, 255, 255, 0.3);
+    width: 300px;
+    height: calc(100vh - 20px);
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-family: Calibri;
+    color: white;
+    font-size: 30px;
+    transition: 0.3s all;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.settings::-webkit-scrollbar {
+    background: gray;
+    width: 12px;
+}
+
+.settings::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+    margin: 8px;
+    border: 2px solid gray;
+}
+
+.settings input[type=submit] {
+    border: none;
+    font-family: Calibri;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    transition: 0.2s all;
+}
+
+.settings input[type=submit]:hover {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.settings-hover {
+    position: fixed;
+    right: 0;
+    width: 20px;
+    height: 100vh;
+    background: rgba(30, 30, 30, 0.8);
+}
+
+.settings-hover:hover + .settings, .settings:hover {
+    right: 0px;
+}
+
+.settings li p {
+    text-align: center;
+}
+
+.settings li {
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.settings input {
+    text-align: center;
+    font-family: Calibri;
+    font-size: 30px;
+    width: 100%;
+    border-radius: 6px;
+    border-style: none;
+}
+
+.prevdisplay {
+    display: block;
+    text-align: center;
+}
+
+input[name=prevrange], input[name=orbitnumber] {
+    margin-top: 30px;
+}
+
+ul:last-child {
+    margin-bottom: 10px;
+}
