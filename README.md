@@ -1,2 +1,2 @@
 ## Simulador de física construído em JS
-### este é um simulador de gravidade e de colisões perfeitamente elásticas entre partículas em 2 dimensões. <br>Neste projeto coloquei algumas funcionalidades extras, como: orbitar outra partícula, acelerar partícula, previsão de trajetória e também uma opção que permite criar um círculo de partículas se movendo em uma trajetória circular.
+### este é um simulador de gravidade e de colisões perfeitamente elásticas entre partículas em 2 dimensões. <br><br>Neste projeto coloquei algumas funcionalidades extras, como: orbitar outra partícula, acelerar partícula, previsão de trajetória e também uma opção que permite criar um círculo de partículas se movendo em uma trajetória circular.
